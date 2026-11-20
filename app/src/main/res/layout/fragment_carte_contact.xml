@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/mapContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <org.osmdroid.views.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Choix de la source de tuiles : si l'une est bloquee, essayer une autre -->
+        <Spinner
+            android:id="@+id/spinnerSource"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="8dp"
+            android:background="?attr/colorSurface"
+            android:minWidth="180dp"
+            android:paddingStart="8dp" />
+
+        <!-- Mention de licence de la source de tuiles affichee -->
+        <TextView
+            android:id="@+id/tvAttribution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:background="#B3FFFFFF"
+            android:padding="4dp"
+            android:textColor="#000000"
+            android:textSize="11sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNavigateur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/action_ouvrir_navigateur"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvMessageCarte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="24dp"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        android:visibility="gone" />
+</FrameLayout>

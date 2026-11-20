@@ -1,0 +1,18 @@
+# Secrets : ne JAMAIS publier la cle Google Maps
+local.properties
+secrets.properties
+*.keystore
+*.jks
+google-services.json
+
+# Gradle / Android Studio
+.gradle/
+build/
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+.DS_Store

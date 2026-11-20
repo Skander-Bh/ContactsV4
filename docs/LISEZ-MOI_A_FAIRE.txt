@@ -1,0 +1,7 @@
+A FAIRE AVANT DE RENDRE LE TP
+1. Ouvrir le projet dans Android Studio, lancer l'application.
+2. Executer les tests (unitaires + instrumentes) et les tests manuels de la section 9 du compte rendu.
+3. Prendre les 12 captures reelles listees dans le compte rendu (section 11) et les inserer dans
+   Compte_rendu_TP_Contacts_V4.docx, remplir nom/groupe/URL GitHub, puis exporter en PDF.
+4. Creer le depot GitHub (verifier que local.properties n'est PAS pousse), donner l'acces a l'enseignant,
+   deposer l'URL dans Google Classroom.
